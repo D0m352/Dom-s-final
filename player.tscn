@@ -9,6 +9,8 @@
 script = ExtResource("1_pjgea")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(132.75, 126)
+scale = Vector2(0.306789, 0.3)
 texture = ExtResource("2_0iway")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

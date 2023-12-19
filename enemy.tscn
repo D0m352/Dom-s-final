@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyh37ph5hrqen"]
+[gd_scene load_steps=3 format=3 uid="uid://dyh37ph5hrqen"]
+
+[ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://assets/enemy.png" id="1_wg32q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xn0oo"]
 
 [node name="Enemy" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(282, 369.75)
+scale = Vector2(0.282443, 0.272861)
+texture = ExtResource("1_wg32q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_xn0oo")
