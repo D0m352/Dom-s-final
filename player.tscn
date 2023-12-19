@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgyov76ngr281"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_pjgea"]
+[ext_resource type="Texture2D" uid="uid://vs551jdj25r0" path="res://assets/player.png" id="2_0iway"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qon83"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_pjgea")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0iway")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qon83")
